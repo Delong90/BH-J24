@@ -6,7 +6,7 @@ public class PersonExample {
 
         Person person1 = new Person();
 
-        System.out.println(person1.age + " " + person1.name);
+        /*System.out.println(person1.age + " " + person1.name);
 
         person1.name = "Igor";
         person1.age = 20;
@@ -39,6 +39,15 @@ public class PersonExample {
         System.out.println(person1.name + " is " + person1.age + " years old");
         int newAge = person1.growOld();
         System.out.println(person1.name + " is growing old: " + newAge);
-        System.out.println(person1.name + " is " + person1.age + " years old");
+        System.out.println(person1.name + " is " + person1.age + " years old");*/
+
+        /* ---------- */
+
+        Person person5 = new Person("Vasily", 55,
+                new Country("RF", 123), Sex.MALE);
+        Person person6 = new Person("Vasily", 55,
+                Sex.MALE, "Ukraine", 456);
+
+
     }
 }

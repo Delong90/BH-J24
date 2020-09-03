@@ -1,5 +1,8 @@
 package by.belhard.j24.lessons.lesson02;
 
+import by.belhard.j24.lessons.lesson03.Person;
+import by.belhard.j24.lessons.lesson03.Sex;
+
 public class Lesson02 {
 
     public static void main(String[] args) {
@@ -36,5 +39,7 @@ public class Lesson02 {
             q += 1;
             if (q == 5) break;
         }
+
+//        Person person = new Person("",5, Sex.MALE, "", 1);
     }
 }
