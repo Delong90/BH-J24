@@ -41,6 +41,10 @@ public class Person {
                 + mate);
     }
 
+    public Country getCountry() {
+        return country;
+    }
+
     public void walk(String place, int minutes) {
         System.out.println(name +
                 " is walking for "
@@ -79,6 +83,16 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", country=" + country +
+                ", sex=" + sex +
+                '}';
     }
 
     private class A {

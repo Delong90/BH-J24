@@ -14,4 +14,12 @@ public class Country {
         this.title = title;
         this.zipCode = zipCode;
     }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "title='" + title + '\'' +
+                ", zipCode=" + zipCode +
+                '}';
+    }
 }
