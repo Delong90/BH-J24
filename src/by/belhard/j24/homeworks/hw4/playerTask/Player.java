@@ -2,7 +2,7 @@ package by.belhard.j24.homeworks.hw4.playerTask;
 
 public class Player {
 
-//    private int x, y;
+    private int x, y;
     private Position position;
     private double distance;
 
