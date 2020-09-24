@@ -1,12 +1,14 @@
 package by.belhard.j24.lessons.lesson08.exceptionsExample;
 
+import java.io.IOException;
+
 public class Divider {
 
     public Divider() {
 
     }
 
-    public int divide(int a, int b) {
+    public int divide(Integer a, Integer b) throws UncheckedException {
 
         /*int result;
 
@@ -18,6 +20,10 @@ public class Divider {
         }
 
         return result;*/
+
+        /*throw new IOException();*/
+        if (b == 0)
+            throw new UncheckedException("b = 0");
 
         return a / b;
     }

@@ -7,11 +7,18 @@ public class Main {
         Divider divider = new Divider();
 
         try {
-            System.out.println(divider.divide(5, 0));
+            System.out.println(divider.divide(1, 0));
         } catch (ArithmeticException e) {
-            System.out.println("Error");
-        } finally {
-
+            System.err.println("Error: ArithmeticException");
+        } catch (NullPointerException e) {
+            System.err.println("Error: NullPointerException");
+        } catch (UncheckedException e) {
+            System.err.println(e.getMessage());
+            System.err.println("Error: IOException");
+        }/* catch (Exception e) {
+            System.err.println("Error: Exception");
+        }*/ finally {
+            System.out.println("finally");
         }
 
         System.out.println();
